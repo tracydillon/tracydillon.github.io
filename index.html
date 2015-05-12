@@ -94,159 +94,171 @@ if (location.host == 'tracydilon.github.io')
 		</nav>
 	</div>
 	<div id="content" class="small-12 medium-9 large-10 columns">
-	<ul id="portfolio" class="small-block-grid-2 medium-block-grid-4">
-		<!-- COPY THIS FOR EACH NEW THUMBNAIL -->
-		<li>
-			<a class="mizuki">
-				<!-- replace "mizuki_01-sq.png" with the file name of your image -->
-				<img src="/images/mizuki_01-sq.png" alt=""/>
-				<!-- replace "Mizuki" with your title -->
-				<span><b>Mizuki</b></span>
-				<!-- you can delete all the comments once you're familiar -->
-			</a>
-		</li>
-		<!-- COPY THIS FOR EACH NEW THUMBNAIL -->
-		<li>
-			<a class="mizuki">
-				<img src="/images/mizuki_02-sq.png" alt=""/>
-				<span><b>Mizuki</b></span>
-			</a>
-		</li>
-		<li>
-			<a class="wip">
-				<img src="/images/Capture1-sq.jpg" alt=""/>
-				<span><b>Romantic Girl</b></span>
-			</a>
-		</li>
-		<li>
-			<a class="wip">
-				<img src="/images/Capture2-sq.jpg" alt=""/>
-				<span><b>Romantic Girl</b></span>
-			</a>
-		</li>
+		<!--
+			UNCOMMENT THE HTML BELOW TO SHOW REEL
+			find the numerical id for your video and replace it below
+			do not replace the entire iframe or the entire url
+		-->
+		<!--
+		<div id="reel">
+			<div class="video_box">
+				<iframe src="//player.vimeo.com/video/120921033?color=9D6D6E&portrait=0&byline=0&badge=0&title=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+		-->
+		<ul id="portfolio" class="small-block-grid-2 medium-block-grid-4">
+			<!-- COPY THIS FOR EACH NEW THUMBNAIL -->
+			<li>
+				<a class="mizuki">
+					<!-- replace "mizuki_01-sq.png" with the file name of your image -->
+					<img src="/images/mizuki_01-sq.png" alt=""/>
+					<!-- replace "Mizuki" with your title -->
+					<span><b>Mizuki</b></span>
+					<!-- you can delete all the comments once you're familiar -->
+				</a>
+			</li>
+			<!-- COPY THIS FOR EACH NEW THUMBNAIL -->
+			<li>
+				<a class="mizuki">
+					<img src="/images/mizuki_02-sq.png" alt=""/>
+					<span><b>Mizuki</b></span>
+				</a>
+			</li>
+			<li>
+				<a class="wip">
+					<img src="/images/Capture1-sq.jpg" alt=""/>
+					<span><b>Romantic Girl</b></span>
+				</a>
+			</li>
+			<li>
+				<a class="wip">
+					<img src="/images/Capture2-sq.jpg" alt=""/>
+					<span><b>Romantic Girl</b></span>
+				</a>
+			</li>
+			<!-- DELETE THIS AFTER YOU EDIT -->
+			<li class="show-for-medium-up"><img src="/images/filler.png" alt=""/></li>
+			<li class="show-for-medium-up"><img src="/images/filler.png" alt=""/></li>
+			<li class="show-for-medium-up"><img src="/images/filler.png" alt=""/></li>
+			<li class="show-for-medium-up"><img src="/images/filler.png" alt=""/></li>
+			<!-- DELETE THIS AFTER YOU EDIT -->
+		</ul>
+
+		<!--
+			everything contained inside { } is a separate image in your gallery
+			src = your full image
+			thumb = your thumbnail
+			do not remove "/images/" from any of the urls
+			<h2> </h2> contains your title
+			<p> </p> containts your caption
+			do not use " in your caption
+		-->
+
+		<!--
+		<script>
+		$(document).ready(function() {
+			$('.mizuki').click(function(e){
+				$(this).lightGallery({
+					dynamic: true,
+					html: true,
+					dynamicEl: [
+						{
+							"src": "/images/mizuki_01.png",
+							"thumb": "/images/mizuki_01-sq.png",
+							"sub-html": "<div class='custom-html'><h2>Mizuki</h2><p>Character Model</p></div>"
+						},
+						{
+							"src": "/images/mizuki_02.png",
+							"thumb": "/images/mizuki_02-sq.png",
+							"sub-html": "<div class='custom-html'><h2>Mizuki</h2><p>Character Model</p></div>"
+						},
+						{
+							"src": "/images/mizuki_02.png",
+							"thumb": "/images/mizuki_02-sq.png",
+							"sub-html": "<div class='custom-html'><h2>Mizuki</h2><p>Character Model</p></div>"
+						},
+						{
+							"src": "/images/mizuki_02.png",
+							"thumb": "/images/mizuki_02-sq.png",
+							"sub-html": "<div class='custom-html'><h2>Mizuki</h2><p>Character Model</p></div>"
+						}
+					]
+				});
+			});
+			$('.wip').click(function(e){
+				$(this).lightGallery({
+					dynamic: true,
+					html: true,
+					dynamicEl: [
+						{
+							"src": "/images/Capture1.JPG",
+							"thumb": "/images/Capture1-sq.jpg",
+							"sub-html": "<div class='custom-html'><h2>Romantic Girl</h2><p>WIP, concept by <a href='https://www.artstation.com/artwork/girl-37cea351-43c3-48cf-a021-3f0c227cc22c' target='blank'>Mikhail Rakhmatullin</a>, high poly sculpt in zBrush</p></div>"
+						},
+						{
+							"src": "/images/Capture2.JPG",
+							"thumb": "/images/Capture2-sq.jpg",
+							"sub-html": "<div class='custom-html'><h2>Romantic Girl</h2><p>WIP, concept by <a href='https://www.artstation.com/artwork/girl-37cea351-43c3-48cf-a021-3f0c227cc22c' target='_blank'>Mikhail Rakhmatullin</a>, high poly sculpt in zBrush</p></div>"
+						},
+						{
+							"src": "/images/Capture2.JPG",
+							"thumb": "/images/Capture2-sq.jpg",
+							"sub-html": "<div class='custom-html'><h2>Romantic Girl</h2><p>WIP, concept by <a href='https://www.artstation.com/artwork/girl-37cea351-43c3-48cf-a021-3f0c227cc22c' target='_blank'>Mikhail Rakhmatullin</a>, high poly sculpt in zBrush</p></div>"
+						},
+						{
+							"src": "/images/Capture2.JPG",
+							"thumb": "/images/Capture2-sq.jpg",
+							"sub-html": "<div class='custom-html'><h2>Romantic Girl</h2><p>WIP, concept by <a href='https://www.artstation.com/artwork/girl-37cea351-43c3-48cf-a021-3f0c227cc22c' target='_blank'>Mikhail Rakhmatullin</a>, high poly sculpt in zBrush</p></div>"
+						}
+					]
+				});
+			});
+		});
+		</script>
+		-->
+
 		<!-- DELETE THIS AFTER YOU EDIT -->
-		<li class="show-for-medium-up"><img src="/images/filler.png" alt=""/></li>
-		<li class="show-for-medium-up"><img src="/images/filler.png" alt=""/></li>
-		<li class="show-for-medium-up"><img src="/images/filler.png" alt=""/></li>
-		<li class="show-for-medium-up"><img src="/images/filler.png" alt=""/></li>
+		<script>
+		$(document).ready(function() {
+			$('.mizuki').click(function(e){
+				$(this).lightGallery({
+					dynamic: true,
+					html: true,
+					dynamicEl: [
+						{
+							"src": "/images/mizuki_01.png",
+							"thumb": "/images/mizuki_01-sq.png",
+							"sub-html": "<div class='custom-html'><h2>Mizuki</h2><p>Character Model</p></div>"
+						},
+						{
+							"src": "/images/mizuki_02.png",
+							"thumb": "/images/mizuki_02-sq.png",
+							"sub-html": "<div class='custom-html'><h2>Mizuki</h2><p>Character Model</p></div>"
+						}
+					]
+				});
+			});
+			$('.wip').click(function(e){
+				$(this).lightGallery({
+					dynamic: true,
+					html: true,
+					dynamicEl: [
+						{
+							"src": "/images/Capture1.JPG",
+							"thumb": "/images/Capture1-sq.jpg",
+							"sub-html": "<div class='custom-html'><h2>Romantic Girl</h2><p>WIP, concept by <a href='https://www.artstation.com/artwork/girl-37cea351-43c3-48cf-a021-3f0c227cc22c' target='blank'>Mikhail Rakhmatullin</a>, high poly sculpt in zBrush</p></div>"
+						},
+						{
+							"src": "/images/Capture2.JPG",
+							"thumb": "/images/Capture2-sq.jpg",
+							"sub-html": "<div class='custom-html'><h2>Romantic Girl</h2><p>WIP, concept by <a href='https://www.artstation.com/artwork/girl-37cea351-43c3-48cf-a021-3f0c227cc22c' target='_blank'>Mikhail Rakhmatullin</a>, high poly sculpt in zBrush</p></div>"
+						}
+					]
+				});
+			});
+		});
+		</script>
 		<!-- DELETE THIS AFTER YOU EDIT -->
-	</ul>
-
-<!--
-	everything contained inside { } is a separate image in your gallery
-	src = your full image
-	thumb = your thumbnail
-	do not remove "/images/" from any of the urls
-	<h2> </h2> contains your title
-	<p> </p> containts your caption
-	do not use " in your caption
--->
-
-<!--
-<script>
-$(document).ready(function() {
-	$('.mizuki').click(function(e){
-		$(this).lightGallery({
-			dynamic: true,
-			html: true,
-			dynamicEl: [
-				{
-					"src": "/images/mizuki_01.png",
-					"thumb": "/images/mizuki_01-sq.png",
-					"sub-html": "<div class='custom-html'><h2>Mizuki</h2><p>Character Model</p></div>"
-				},
-				{
-					"src": "/images/mizuki_02.png",
-					"thumb": "/images/mizuki_02-sq.png",
-					"sub-html": "<div class='custom-html'><h2>Mizuki</h2><p>Character Model</p></div>"
-				},
-				{
-					"src": "/images/mizuki_02.png",
-					"thumb": "/images/mizuki_02-sq.png",
-					"sub-html": "<div class='custom-html'><h2>Mizuki</h2><p>Character Model</p></div>"
-				},
-				{
-					"src": "/images/mizuki_02.png",
-					"thumb": "/images/mizuki_02-sq.png",
-					"sub-html": "<div class='custom-html'><h2>Mizuki</h2><p>Character Model</p></div>"
-				}
-			]
-		});
-	});
-	$('.wip').click(function(e){
-		$(this).lightGallery({
-			dynamic: true,
-			html: true,
-			dynamicEl: [
-				{
-					"src": "/images/Capture1.JPG",
-					"thumb": "/images/Capture1-sq.jpg",
-					"sub-html": "<div class='custom-html'><h2>Romantic Girl</h2><p>WIP, concept by <a href='https://www.artstation.com/artwork/girl-37cea351-43c3-48cf-a021-3f0c227cc22c' target='blank'>Mikhail Rakhmatullin</a>, high poly sculpt in zBrush</p></div>"
-				},
-				{
-					"src": "/images/Capture2.JPG",
-					"thumb": "/images/Capture2-sq.jpg",
-					"sub-html": "<div class='custom-html'><h2>Romantic Girl</h2><p>WIP, concept by <a href='https://www.artstation.com/artwork/girl-37cea351-43c3-48cf-a021-3f0c227cc22c' target='_blank'>Mikhail Rakhmatullin</a>, high poly sculpt in zBrush</p></div>"
-				},
-				{
-					"src": "/images/Capture2.JPG",
-					"thumb": "/images/Capture2-sq.jpg",
-					"sub-html": "<div class='custom-html'><h2>Romantic Girl</h2><p>WIP, concept by <a href='https://www.artstation.com/artwork/girl-37cea351-43c3-48cf-a021-3f0c227cc22c' target='_blank'>Mikhail Rakhmatullin</a>, high poly sculpt in zBrush</p></div>"
-				},
-				{
-					"src": "/images/Capture2.JPG",
-					"thumb": "/images/Capture2-sq.jpg",
-					"sub-html": "<div class='custom-html'><h2>Romantic Girl</h2><p>WIP, concept by <a href='https://www.artstation.com/artwork/girl-37cea351-43c3-48cf-a021-3f0c227cc22c' target='_blank'>Mikhail Rakhmatullin</a>, high poly sculpt in zBrush</p></div>"
-				}
-			]
-		});
-	});
-});
-</script>
--->
-
-<!-- DELETE THIS AFTER YOU EDIT -->
-<script>
-$(document).ready(function() {
-	$('.mizuki').click(function(e){
-		$(this).lightGallery({
-			dynamic: true,
-			html: true,
-			dynamicEl: [
-				{
-					"src": "/images/mizuki_01.png",
-					"thumb": "/images/mizuki_01-sq.png",
-					"sub-html": "<div class='custom-html'><h2>Mizuki</h2><p>Character Model</p></div>"
-				},
-				{
-					"src": "/images/mizuki_02.png",
-					"thumb": "/images/mizuki_02-sq.png",
-					"sub-html": "<div class='custom-html'><h2>Mizuki</h2><p>Character Model</p></div>"
-				}
-			]
-		});
-	});
-	$('.wip').click(function(e){
-		$(this).lightGallery({
-			dynamic: true,
-			html: true,
-			dynamicEl: [
-				{
-					"src": "/images/Capture1.JPG",
-					"thumb": "/images/Capture1-sq.jpg",
-					"sub-html": "<div class='custom-html'><h2>Romantic Girl</h2><p>WIP, concept by <a href='https://www.artstation.com/artwork/girl-37cea351-43c3-48cf-a021-3f0c227cc22c' target='blank'>Mikhail Rakhmatullin</a>, high poly sculpt in zBrush</p></div>"
-				},
-				{
-					"src": "/images/Capture2.JPG",
-					"thumb": "/images/Capture2-sq.jpg",
-					"sub-html": "<div class='custom-html'><h2>Romantic Girl</h2><p>WIP, concept by <a href='https://www.artstation.com/artwork/girl-37cea351-43c3-48cf-a021-3f0c227cc22c' target='_blank'>Mikhail Rakhmatullin</a>, high poly sculpt in zBrush</p></div>"
-				}
-			]
-		});
-	});
-});
-</script>
-<!-- DELETE THIS AFTER YOU EDIT -->
 
 		<footer class="social show-for-small-down">
 			<ul class="small-block-grid-4">

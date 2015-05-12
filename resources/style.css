@@ -369,6 +369,28 @@ h3 {
 	padding-bottom: 1.25rem;
 }
 
+.video_box {
+	position: relative;
+	overflow: hidden;
+	padding-top: 0;
+	padding-bottom: 57.25%;
+	height: 0;
+	margin-bottom: 1.5rem;
+}
+.video_box a, .video_box img {
+	position: relative;
+	background: #000!important;
+	width: 100%!important;
+}
+.video_box iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000!important;
+}
+
 @media only screen and (min-width: 40.063em) {
 	#container {
 		padding-top: 50px;
